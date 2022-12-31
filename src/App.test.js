@@ -35,7 +35,7 @@ test("button switch from disabled/enabled when checkbox is checked/unchecked", (
   render(<App />);
 
   const colorButton = screen.getByRole("button");
-  const checkbox = screen.getByRole("checkbox");
+  const checkbox = screen.getByRole("checkbox", { name: "Disable button" });
 
   // initially the check box is unchecked and button should be enabled
   expect(checkbox).not.toBeChecked();

@@ -20,10 +20,11 @@ function App() {
         Change to {newButtonColor}
       </button>
       <input
-        id="enable-button-checkbox"
+        id="disable-button-checkbox"
         type="checkbox"
         onChange={checkboxClickHandler}
       />
+      <label htmlFor="disable-button-checkbox">Disable button</label>
     </div>
   );
 }
